@@ -1,0 +1,175 @@
+:root {
+    --NewViolet: rgba(70, 65, 153, 1);
+    --Black: rgba(5, 4, 10, 1);
+    --White: rgba(255, 255, 255, 1);
+    --Light-Violet: rgba(135, 132, 201, 1);
+}
+
+body {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--Black, #05040A);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    width: 100%; /* Единственное, что добавил здесь вручную */
+}
+
+.header {
+    display: flex;
+    height: 170px;
+    padding: 0px 210px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.navbar {
+    display: flex;
+    width: 1500px;
+    max-width: 1500px;
+    padding: 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subnav {
+    display: flex;
+    width: 1500px;
+    max-width: 1500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-search-container {
+    display: flex;
+    min-width: 267px;
+    max-width: 732px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.logo-container {
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+    gap: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1 0 0;
+}
+
+.search__input {
+    display: flex;
+    height: 60px;
+    min-width: 200px;
+    max-width: 385px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+
+    border-radius: 20px;
+    border: 2px solid var(--NewViolet, #464199);
+}
+
+.search__rand-btn {
+    display: flex;
+    height: 60px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--NewViolet, #464199);
+}
+
+.search__input-field {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1 0 0;
+}
+
+.Text1 {
+    color: var(--Light-Violet, #8784C9);
+
+    /* Text1 */
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search__dropdown-btn {
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.categories {
+    display: flex;
+    min-width: 300px;
+    max-width: 450px;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.H2 {
+    color: var(--White, #FFF);
+
+    /* H2 */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.categories__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.discord-icon-login-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--NewViolet, #464199);
+}
+
+.Buttons2 {
+    color: var(--White, #FFF);
+
+    /* Buttons2 */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
