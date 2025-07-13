@@ -12,7 +12,8 @@ body {
     background: var(--Black, #05040A);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-    width: 100%; /* Единственное, что добавил здесь вручную */
+    width: 100%;
+    /* Единственное, что добавил здесь вручную */
 }
 
 .header {
@@ -144,7 +145,21 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    background-color: rgb(11, 39, 39);
 }
+
+.categories__btn::after {
+    content: "";
+    background-color: #8784C9;
+    width: 1px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.categories__btn:last-child:after {
+    content: none;
+}
+
 
 .discord-icon-login-btn {
     display: flex;
@@ -171,5 +186,62 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+}
+
+.card {
+    display: flex;
+    width: 225px;
+    height: 305px;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink: 0;
+    /*
+        В фигме такого свойства у карты нет. Нужно поставить его здесь самому.
+        Зачем оно нужно? Чтобы у .card__stats "position: absolute" работал относительно .card — своего родительского элемента.
+        Если отсюда убрать "position: relative", то у детей .card абсолютная позиция будет устанавливаться относительно ближайшего предка с "position: relative".
+        Source: https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent
+    */
+    position: relative;
+}
+
+.card__stats {
+    display: flex;
+    width: 136px;
+    height: 21px;
+    padding: 2px 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 10px 0px;
+    background: rgba(5, 4, 10, 0.50);
+}
+
+.card__likes {
+    display: flex;
+    width: 48px;
+    height: 17px;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__views {
+    display: flex;
+    width: 63px;
+    align-items: center;
+    gap: 5px;
+}
+
+.Text2 {
+    color: var(--White, #FFF);
+
+    /* Text2 */
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
 }
